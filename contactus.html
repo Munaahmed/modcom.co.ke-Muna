@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+
+	<link rel="stylesheet" type="text/css"
+	 href="css/bootstrap.css">
+     
+
+</head>
+<body>
+
+<a href="index.html" class="btn btn-dark">Home</a>
+</br><br>
+  <section class="row container">
+    <div class="col-md-6">
+    	<form> 
+    	<!-- Provide IDs for each element -->
+    		<input type="email" placeholder="Your Email" class="form-control" id="email"/>
+    		<div id="error1" class="text-danger"></div>
+    		</br>
+
+    		<input type="Name" placeholder="Your Name" class="form-control" id="name">
+    		 <div id="error2" class="text-danger"></div>
+    		</br>
+
+    		<input type="text" placeholder="Your Phone No." class="form-control" id="phone">
+    		<div id="error4" class="text-danger"></div> <br>
+
+    		<textarea cols="10" rows="5" class="form-control" id="message"></textarea>
+    		</br>
+    		<div id="error3" class="text-danger"></div>
+
+
+
+    		<button type="button" class="btn btn-success"
+    		 onclick="validateForm1();">Send Message</button>
+    		</br>
+
+    	</form>
+
+    </div> <!--End Col-->
+
+
+    <div class="col-md-6">
+    	
+
+    </div>  <!--End Col-->	
+
+  </section>
+
+
+<script type="text/javascript">
+		//JS functions - categorize your program into blocks
+		//in programing - a program does some task
+		//below functions validates our first form
+		//A function name is defined by developer	
+		//CamelCase: ValidateForm, AddNumbers
+		//snakeCase: validateForm, addNumbers
+		function validateForm1()
+		{
+			var email= document.getElementById("email").value; //capture name
+		    var name= document.getElementById("name").value; //capture name
+			var message= document.getElementById("message").value; //capture name
+			var phone= document.getElementById("phone").value;
+
+			//decision making, if statements
+
+			if (email=="") {
+                      document.getElementById("error1").innerHTML ="Required Email";
+			}
+
+
+				if (name=="") {
+                      document.getElementById("error2").innerHTML ="Please Enter Your Name";
+
+			}
+
+
+				if (message=="") {
+                      document.getElementById("error3").innerHTML ="Your Message is Required";
+
+			}
+			   if (phone=="") {
+			   	      document.getElementById("error4").innerHTML ="Enter Phone No."
+
+			   }
+
+
+
+
+
+		} //Function Ends Here
+
+
+
+</script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

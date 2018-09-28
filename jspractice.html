@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Javascript Basics</title>
+	<!-- Javascript adds interactivity, dynamic content, logic -->
+
+</head>
+<body>
+
+   <h1 id="heading1"></h1>
+   <h1 id="heading2"></h1>
+   <h4 id="heading3"></h4>
+   <p id="paragraph1"></p>
+   <h5 id="sum"></h5>
+   <h5 id="product"></h5>
+   <h5 id="difference"></h5>
+
+
+   <script type="text/javascript">
+     //rule based language 
+     //how to display something in Js
+     //alert("Welcome!"); //1st
+     //document.write("We Care"); //2nd
+     //console.log("We Are Good"); //3rd
+     //we find element by id
+     document.getElementById("heading1").innerHTML="Hello";
+     document.getElementById("heading2").innerHTML="Welcome";
+     document.getElementById("heading3").innerHTML="kARIBU";
+     document.getElementById("paragraph1").innerHTML="This is my first paragraph";
+
+      //data storage
+      //variables - store values
+      //every js variable stars with 'var' keyword
+      var x = 50;
+      var y = 60;
+      //Add them, create variable to store answer
+      var total = x + y;
+      
+      document.getElementById("sum").innerHTML = total;
+
+      //multiply
+     
+      var product = x * y;
+       document.getElementById("product").innerHTML = product;
+
+      
+
+      //subtract
+       var difference = x-y;
+       document.getElementById("difference").innerHTML = difference;
+   //divide
+  
+    </script>
+
+</body>
+</html>
